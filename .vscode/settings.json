@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "processa_dbus_us.h": "c",
+        "processb_dbus_us.h": "c"
+    }
+}

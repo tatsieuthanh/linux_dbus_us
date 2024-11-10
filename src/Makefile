@@ -1,22 +1,22 @@
-# Tên của chương trình
+# Name of the target: main
 TARGET = main
 
-# Các tệp nguồn
+# souece files
 SRC = main.c
 
-# Thư viện chia sẻ
-LIB = ../libshareprocess.so
+# shared library
+LIB = ../lib/libshareprocess.so
 
-# Trình biên dịch
+# Complier
 CC = gcc
 
-# Các cờ biên dịch
+# Comnpile flags
 CFLAGS = -Wall -Wextra -O2 -I../include
 
-# Các cờ liên kết
-LDFLAGS = -L.. -lshareprocess
+# Linker flags
+LDFLAGS = -L../lib -lshareprocess
 
-# Quy tắc mặc định
+# 
 all: $(TARGET)
 
 # Quy tắc biên dịch chương trình

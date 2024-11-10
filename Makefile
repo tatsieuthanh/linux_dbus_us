@@ -1,6 +1,8 @@
-TARGET = libshareprocess.so
+TARGET = lib/libshareprocess.so
 
 SRC = src/processA_dbus_us.c src/processB_dbus_us.c 
+
+OBJ = $(SRC:%.c=%.o)
 
 CC = gcc
 
@@ -10,8 +12,12 @@ LDFLAGS = -shared
 
 all: $(TARGET)
 
-$(TARGET): $(SRC)
-	$(CC) $(CFLAGS) $(LDFLAGS) -o $(TARGET) $(SRC)
+$(TARGET): $(OBJ)
+	$(CC) $(LDFLAGS) -o $(TARGET) $(OBJ)
+
+src/%.o: src/%.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
 
 clean:
-	rm -f $(TARGET)
+	rm -f $(TARGET) $(OBJ)

@@ -3,6 +3,7 @@
         "processa_dbus_us.h": "c",
         "processb_dbus_us.h": "c",
         "unistd.h": "c",
-        "stdio.h": "c"
+        "stdio.h": "c",
+        "pthread.h": "c"
     }
 }

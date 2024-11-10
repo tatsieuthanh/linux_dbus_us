@@ -11,7 +11,6 @@ int hello_processA()
     return 0;
 }
 
-
 DBusConnection* setup_dbus_connection() {
     DBusError err;
     DBusConnection *conn;
@@ -53,7 +52,7 @@ void send_message(int n, DBusConnection *conn) {
     dbus_uint32_t serial = 0;
     char *message = NULL;
 
-    if (asprintf(&message, "Hello World! %d", n) == -1) {
+    if (asprintf(&message, "Dbus send %d", n) == -1) {
         fprintf(stderr, "Failed to allocate memory for message\n");
         return;
     }

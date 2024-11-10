@@ -4,5 +4,6 @@
 
 
 void *hello_processB();
+void *send_us() ;
 
 #endif // PROCESSB_DBUS_US_H

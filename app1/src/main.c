@@ -17,7 +17,7 @@ int main() {
         return 1;
     }
 
-    if (pthread_create(&thread_id2, NULL, hello_processB, conn) != 0) {
+    if (pthread_create(&thread_id2, NULL, send_us, conn) != 0) {
         fprintf(stderr, "Error creating thread\n");
         return 1;
     }

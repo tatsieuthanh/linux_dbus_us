@@ -3,6 +3,6 @@
 #define PROCESSB_DBUS_US_H
 
 
-int hello_processB();
+void *hello_processB();
 
 #endif // PROCESSB_DBUS_US_H

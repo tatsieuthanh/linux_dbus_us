@@ -23,5 +23,5 @@ src/%.o: src/%.c
 
 
 clean:
-	rm -f $(TARGET) $(OBJ)
+	rm -f $(LIB_TARGET) $(OBJ)
 	$(MAKE) -C src clean

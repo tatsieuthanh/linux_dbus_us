@@ -3,6 +3,6 @@
 #define PROCESSC_DBUS_US_H
 
 // Hàm tính tổng hai số
-int hello_processA();
+int hello_processC();
 
 #endif // PROCESSA_DBUS_US_H

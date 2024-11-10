@@ -13,10 +13,10 @@ OBJ = $(SRC:%.c=%.o)
 LIB = ../lib/libshareprocess_ab.so
 
 # Comnpile flags
-CFLAGS = -Wall -Wextra -O2 -I../include
+CFLAGS = -Wall -Wextra -O2 -I../include -I/usr/include/dbus-1.0/ -I/usr/lib/x86_64-linux-gnu/dbus-1.0/include/
 
 # Linker flags
-LDFLAGS = -L../lib -lshareprocess_ab
+LDFLAGS = -L../lib -lshareprocess_ab -ldbus-1
 
 # Compile the target
 all: $(TARGET)
